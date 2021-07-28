@@ -1,10 +1,22 @@
 import Layout from '../components/layout'
+import Head from 'next/head'
 
 function HomePage() {
-    return <Layout>
-        <h1>Welcome to Next.js!</h1>
+  return (
+    <Layout>
+      <Head>
+        <title>Anasayfa</title>
+      </Head>
+      <h1>Welcome to Next.js!</h1>
 
+      <style jsx>{`
+       h1{
+           color: blue;
+       }
+      `}</style>
+      
     </Layout>
-  }
-  
-  export default HomePage
+  )
+}
+
+export default HomePage

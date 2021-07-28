@@ -1,25 +1,51 @@
 import Link from 'next/link'
+import styles from './header.module.css'
 
 function Header() {
-    return <div>
-        <nav>
-            <ul>
-                <li>
-                    <Link href='/'>Index</Link>
-                </li>
-                <li>
-                    <Link href='/about'>About</Link>
-                </li>
-                <li>
-                    <Link href='/about'>Contact</Link>
-                </li>
-                <li>
-                    <Link href='/about'>Blog</Link>
-                </li>
-            </ul>
-        </nav>
+  return (
+    <>
+      <nav>
+        <ul>
+          <li>
+            <Link href="/">
+              <a className={styles.link}>Index</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/about">
+              <a className={styles.about}>About</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/about">
+              <a style={{ color: 'orange' }}>Contact</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/about">
+              <a className={styles.about}>Blog</a>
+            </Link>
+          </li>
+        </ul>
+      </nav>
+      <style jsx>{`
+        ul {
+          list-style: none;
+          display: flex;
+        }
+        ul li {
+          padding-right: 15px;
+        }
+      `}</style>
 
-    </div>
-  }
-  
-  export default Header
+      <style global jsx>{`
+       body{
+           background: #ccc;
+       }
+      `}</style>
+      
+    </>
+  )
+}
+
+export default Header
