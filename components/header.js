@@ -28,6 +28,7 @@ function Header() {
           </li>
         </ul>
       </nav>
+      
       <style jsx>{`
         ul {
           list-style: none;
