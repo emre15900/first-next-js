@@ -1,12 +1,12 @@
 import Link from 'next/link'
-import styles from './header.module.css'
+import styles from './header.module.scss'
 
 function Header() {
   return (
     <>
       <nav>
         <ul>
-          <li>
+          <li className={styles.test}>
             <Link href="/">
               <a className={styles.link}>Index</a>
             </Link>
