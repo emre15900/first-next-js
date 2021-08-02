@@ -28,21 +28,7 @@ function Header() {
           </li>
         </ul>
       </nav>
-      
-      <style jsx>{`
-        ul {
-          list-style: none;
-          display: flex;
-        }
 
-      `}</style>
-
-      <style global jsx>{`
-       body{
-           background: #ccc;
-       }
-      `}</style>
-      
     </>
   )
 }

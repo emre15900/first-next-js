@@ -8,12 +8,6 @@ function HomePage() {
         <title>Anasayfa</title>
       </Head>
       <h1>Welcome to Next.js!</h1>
-
-      <style jsx>{`
-       h1{
-           color: blue;
-       }
-      `}</style>
       
     </Layout>
   )
