@@ -34,9 +34,7 @@ function Header() {
           list-style: none;
           display: flex;
         }
-        ul li {
-          padding-right: 15px;
-        }
+
       `}</style>
 
       <style global jsx>{`
